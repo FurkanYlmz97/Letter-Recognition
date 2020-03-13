@@ -1,5 +1,5 @@
 # Letter-Recognition
-Python code for single-layer perceptron from scratch. (Only numpy has been used)
+Python code for single-layer perceptron from scratch. (Only numpy has been used). By exemining this code you may get an simple idea of an NN that is enable to distinguish different letters of the English alphabet.  
 
 After traning the weights' images are as follows,
 
