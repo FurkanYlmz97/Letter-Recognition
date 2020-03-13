@@ -1,4 +1,4 @@
-__author__ = "Furkan Yılmaz"
+__author__ = "Furkan Yilmaz"
 
 import numpy as np
 from matplotlib import pyplot as plt
@@ -77,7 +77,7 @@ def training(train_images, train_labels, weights, bias_terms, learning_rate, sho
             plt.imshow(neuron_weights[l])
 
     # plots the mse values
-    if show_rmse is True:
+    if show_rmse:
         plt.figure()
         plt.plot(NN_mse, color=str(color_input), label="LR:" + str(learning_rate))
         plt.title("MSE Value in every Iteration")
@@ -99,7 +99,7 @@ def test(test_images, test_labels, weights, bias_terms):
     true_number = 0
 
     # Test all images
-    for i in range(len(test_images)):
+    for i in enumerate(test_images):
 
         # Take the images one by one and standardize them
         input = test_images[i]
